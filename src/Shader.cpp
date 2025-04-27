@@ -170,6 +170,8 @@ void GLitch::Shader::setInt(const std::string& name, int value) const
     glUniform1i(location, value);
 }
 
+GLitch::Shader::~Shader() = default;
+
 int GLitch::Shader::getUniformLocation(const std::string& name) const
 {
     if (const auto it = m_uniformCache.find(name); it != m_uniformCache.end())

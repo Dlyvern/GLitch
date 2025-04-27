@@ -35,6 +35,6 @@ namespace GLitch
         int getUniformLocation(const std::string& name) const;
     };
 
-}
+} //namespace GLitch
 
 #endif //SHADER_HPP
